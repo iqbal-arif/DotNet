@@ -5,12 +5,14 @@ namespace AttributeRoutingDemoInMVC.Controllers
 {
     public class StudentsController : Controller
     {
-        static List<Student> students = new List<Student>()
+¹<Student>()
         {
             new Student() { Id = 1, Name = "Pranaya" },
             new Student() { Id = 2, Name = "Priyanka" },
             new Student() { Id = 3, Name = "Anurag" },
-            new Student() { Id = 4, Name = "Sambit" }
+            new Student() { Id = 4, Name = "Sambit" },
+            new Student() { Id = 5, Name = "Arvin" },
+           new Student() { Id = 4, Name = "Wasti" }
         };
 
         [HttpGet]
