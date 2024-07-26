@@ -22,6 +22,10 @@ public IActionResult Home()
         {
             return View();
         }
+public IActionResult ContactUs()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
