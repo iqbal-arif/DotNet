@@ -12,7 +12,8 @@ namespace AttributeRoutingDemoInMVC.Controllers
             new Student() { Id = 3, Name = "Anurag" },
             new Student() { Id = 4, Name = "Sambit" },
             new Student() { Id = 5, Name = "Arvin" },
-           new Student() { Id = 4, Name = "Wasti" }
+            new Student() { Id = 4, Name = "Wasti" },
+            new Student() { Id = 4, Name = "dotnettutorial" }
         };
 
         [HttpGet]
