@@ -37,6 +37,8 @@ namespace AttributeRoutingDemoInMVC.Controllers
                 CourseList = new List<string>() { "ASP.NET MVC", "C#.NET", "ADO.NET" };
             else if (studentID == 3)
                 CourseList = new List<string>() { "ASP.NET WEB API", "C#.NET", "Entity Framework" };
+            else if (studentID == 4)
+                CourseList = new List<string>() { "BLAZOR WASM" };
             else
                 CourseList = new List<string>() { "Bootstrap", "jQuery", "AngularJs" };
 
