@@ -5,12 +5,15 @@ namespace AttributeRoutingDemoInMVC.Controllers
 {
     public class StudentsController : Controller
     {
-        static List<Student> students = new List<Student>()
+¹<Student>()
         {
             new Student() { Id = 1, Name = "Pranaya" },
             new Student() { Id = 2, Name = "Priyanka" },
             new Student() { Id = 3, Name = "Anurag" },
-            new Student() { Id = 4, Name = "Sambit" }
+            new Student() { Id = 4, Name = "Sambit" },
+            new Student() { Id = 5, Name = "Arvin" },
+            new Student() { Id = 4, Name = "Wasti" },
+            new Student() { Id = 4, Name = "dotnettutorial" }
         };
 
         [HttpGet]
@@ -39,6 +42,8 @@ namespace AttributeRoutingDemoInMVC.Controllers
                 CourseList = new List<string>() { "ASP.NET WEB API", "C#.NET", "Entity Framework" };
             else if (studentID == 4)
                 CourseList = new List<string>() { "BLAZOR WASM" };
+            else if (studentID == 4)
+                CourseList = new List<string>() { "ASP.NET WEB API","Entity Framework" };
             else
                 CourseList = new List<string>() { "Bootstrap", "jQuery", "AngularJs" };
 
