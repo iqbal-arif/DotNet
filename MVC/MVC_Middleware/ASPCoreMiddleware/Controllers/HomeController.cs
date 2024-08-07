@@ -8,5 +8,14 @@ namespace ASPCoreMiddleware.Controllers
         {
             return View();
         }
+        
+        public IActionResult About()
+        {
+            return View();
+        }
+        public int Details(int id)
+        {
+            return id;
+        }
     }
 }

@@ -11,7 +11,14 @@ namespace ASPCoreMiddleware
 
             var app = builder.Build();
 
-            app.MapDefaultControllerRoute();
+            
+            //MapDefaultControllerRoute() Routes to Default Home Controller with Index View.
+            //app.MapDefaultControllerRoute();
+
+            //Mapping to Other than Default Controller use following Methods
+
+            app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=About}/{id?}");
+
             //START ---- FOR ROUTNING ----START
             //Activate when not implementing MVC model
             //Hello World ; Simple MIddleware route
