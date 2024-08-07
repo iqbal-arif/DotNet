@@ -8,3 +8,5 @@ MiddleWare
 1. Controls application looks upon error.
 1. Process User authentication and authorization.
 1. Each Middleware is an object with specific function and role to perform
+1. Run(): Middleware defined using app.Run will never run subsequent middleware.
+1. Use(): Allows middleware placed in pipeline to pass control to the next item in pipeline.
