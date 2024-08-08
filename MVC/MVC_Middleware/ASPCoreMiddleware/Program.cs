@@ -17,7 +17,7 @@ namespace ASPCoreMiddleware
 
             //Mapping to Other than Default Controller use following Methods
 
-            app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=About}/{id?}");
+            app.MapControllerRoute(name: "default", pattern: "{controller=ContactUs}/{action=Index}/{id?}");
 
             //START ---- FOR ROUTNING ----START
             //Activate when not implementing MVC model
