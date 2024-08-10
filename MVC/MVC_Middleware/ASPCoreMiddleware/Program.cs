@@ -7,17 +7,21 @@ namespace ASPCoreMiddleware
             var builder = WebApplication.CreateBuilder(args);
 
             //Required to register MVC Controllers and Views
+            //Required Middleware for both Conventional and Attribute Routing
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            
+            //START ---- FOR CONVENTIONAL ROUTNING ----START
+
             //MapDefaultControllerRoute() Routes to Default Home Controller with Index View.
             //app.MapDefaultControllerRoute();
 
             //Mapping to Other than Default Controller use following Methods
-
-            app.MapControllerRoute(name: "default", pattern: "{controller=ContactUs}/{action=Index}/{id?}");
+            //Conventional Routing
+            //Activate for Conventional Routing
+            //app.MapControllerRoute(name: "default", pattern: "{controller=ContactUs}/{action=Index}/{id?}");
+            //END ---- FOR CONVENTIONAL ROUTNING ----END
 
             //START ---- FOR ROUTNING ----START
             //Activate when not implementing MVC model
@@ -47,6 +51,12 @@ namespace ASPCoreMiddleware
             //    await context.Response.WriteAsync("Middleware 2: The second context after running the first middleware");
             //});
             //END ---- FOR ROUTNING ----END
+
+            //START ---- ATTRIBUTE ROUTING ----- START
+            //Required Middleware for Atttribute Routing
+            app.MapControllers();
+
+
 
             app.Run(); //To Run App.
         }

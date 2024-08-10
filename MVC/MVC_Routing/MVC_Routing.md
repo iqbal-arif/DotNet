@@ -15,3 +15,11 @@ A nechanism that inspect the incoming Requests (ie.URLs) and then mapped that re
 	b. Defined in Program.cs 
 	c. Controller Action Methods handels the request.
 	b. Attribute Based Routing.
+		a . [Route] attribute is used to define the routes.
+		b . [Route] can be configured either at the Controller level or at the Action method level.
+		c. Both Conventional and Attribute Routing can be utilized in a single App.
+		d. Route Templates are not effected by Controller or Action method name change.
+		e. Token can be used as a place holder for both Controller and Action Method individually or simultaneously, such as,
+			a [controller]
+			a [action]
+			a [controller]/[action]
